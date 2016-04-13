@@ -41,17 +41,17 @@ var getDistance = function (event, target) {
 var getDistanceHint = function (distance) {
   if (distance < 10) {
     return "Boiling Hot";
-    else if (distance < 20) {
+    } else if (distance < 20) {
       return "Really Hot";
-          else if (distance < 20) {
+          } else if (distance < 40) {
       return "Hot";
-          else if (distance < 40) {
+          } else if (distance < 80) {
       return "Warm";
-          else if (distance < 80) {
+          } else if (distance < 160) {
       return "Cold";
-          else if (distance < 160) {
+          } else if (distance < 320) {
       return "Reallt Cold";
-          else if (distance < 320) {
+          } else {
       return "Freezing!";
     }
   };
@@ -85,8 +85,6 @@ if (distance < 8) {
   alert("You found the treasure in " + clicks + " clicks!");
  }
 });
-  
-  
   
   
   
